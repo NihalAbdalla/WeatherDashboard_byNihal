@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>The Weather Dashboard</title>
+</head>
+<body>
+<nav class="navbar navbar-header bg-light">
+  <span class="w-100 h1 text-center">The Weather Dashboard</span>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="col-12 border border-dark m-3 square">
+        <div class="row border">
+          <div class="col-12">
+              <span id="city-name" class="name-city align-middle"></span>
+                <img id="current-pic" src="placeholder" alt="">
+          </div>
+        </div>
+      <div class="row border">
+        <div class="col-12 border"> 
+          <p id="temperature"></p> 
+        </div>
+      </div>
+      <div class="row border">
+        <div class="col-12 border">
+          <p id="humidity"></p>
+        </div>
+      </div>
+      <div class="row border">
+        <div class="col-12 border">
+          <p id="wind-speed"></p>
+        </div>
+      </div>
+      <div class="row border">
+        <div class="col-12 d-flex border">
+          <p id="UV-index"></p>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>5-Day Forecast</h3>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col forecast bg-dark text-white ml-1 mb-1 rounded">1</div>
+          <div class="col forecast bg-dark text-white ml-1 mb-1 rounded">1</div>
+          <div class="col forecast bg-dark text-white ml-1 mb-1 rounded">1</div>
+          <div class="col forecast bg-dark text-white ml-1 mb-1 rounded">1</div>
+          <div class="col forecast bg-dark text-white ml-1 mb-1 rounded">1</div>
+        </div>
+    </div>
+      <div class="col order-1">
+        <p class="search-header mt-4">Search for a city</p>
+          <form class="input-group mb-3" style="background-color: black">
+            <input id="input-city" type="text" class="form-control" placeholder="City name">
+              <div class="input-group-append">
+                <button class="btn" type="button" id="city-button">
+                  <i class="fas fa-search-location"></i>
+                </button>
+              </div>
+          </form>
+            <!-- <button class="btn" type="button" id="clear-history">Clear history</button> -->
+      </div>
+    </div>
+</div>
+<script src="assets/js/script.js"></script>
+<script src="https://kit.fontawesome.com/4a3eda80d3.js" crossorigin="anonymous"></script>
+</body>
+</html>
